@@ -189,7 +189,7 @@ footer .inner p:first-child {
   background: #d3d3d3;
 }
 
-.function .inner #function-images {
+.function .inner .function-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +200,7 @@ footer .inner p:first-child {
   margin-bottom: 3rem;
 }
 
-.function .inner #function-images #function-image img {
+.function .inner .function-images .function-image img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -208,7 +208,7 @@ footer .inner p:first-child {
   height: 10rem;
 }
 
-.function .inner #function-images #function-image p {
+.function .inner .function-images .function-image p {
   margin-top: 1.5rem;
 }
 
