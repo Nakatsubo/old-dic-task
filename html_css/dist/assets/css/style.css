@@ -1,12 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-<<<<<<< HEAD
-}
-
-.header p {
-  color: #ff0000;
-=======
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -269,7 +263,6 @@ img {
   vertical-align: middle;
   font-size: 1rem;
   color: #fff;
->>>>>>> develop
 }
 
 /*# sourceMappingURL=maps/style.css.map */
