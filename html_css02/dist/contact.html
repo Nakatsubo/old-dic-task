@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>株式会社DIVE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <link href="assets/css/normalize.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="container">
+      <header class="header">
+        <h1>
+          <a href="index.html"><span>DIVE</span><img alt="DIVE" class="logo_image" src="assets/img/logo.png" /></a>
+        </h1>
+        <nav class="nav">
+          <ul class="top_menu">
+            <li>
+              <a href="index.html">ホーム</a>
+            </li>
+            <li>
+              <a href="business.html">事業内容</a>
+            </li>
+            <li>
+              <a href="company.html">会社概要</a>
+            </li>
+            <li>
+              <a href="contact.html">問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="image_area">
+        <img alt="お問い合わせ" src="assets/img/contact.png" />
+      </div>
+      <div class="wrapper">
+        <aside class="side_menu">
+          <nav>
+            <ul>
+              <li>
+                <a href="business.html">事業内容</a>
+              </li>
+              <li>
+                <a href="company.html">会社概要</a>
+              </li>
+              <li>
+                <a href="contact.html">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="banner">
+            <a href="#"><img alt="みどりを守ろう キャンペーン実施中" src="assets/img/banner.png" /></a>
+          </p>
+        </aside>
+        <main class="main">
+          <form action="#" class="form" method="post">
+            <table class="contact">
+              <tr>
+                <th>
+                  お名前
+                </th>
+                <td>
+                  <input name="name" type="text" />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  メールアドレス
+                </th>
+                <td>
+                  <input name="address" type="text" />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  性別
+                </th>
+                <td>
+                  <input id="man" name="gender" type="radio" /><label class="label" for="man">男</label><input id="woman" name="gender" type="radio" /><label class="label" for="woman">女</label>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  お問い合せ内容
+                </th>
+                <td>
+                  <textarea cols="40" name="content" rows="4"></textarea>
+                </td>
+              </tr>
+            </table>
+            <p>
+              <input type="submit" value="送信" />
+            </p>
+          </form>
+        </main>
+      </div>
+      <footer class="footer">
+        <p>
+          Copyright © 2018 DIVE INC All RIGHTS RESERVED.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
