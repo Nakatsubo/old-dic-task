@@ -1,33 +1,26 @@
-//点数を入力する
-let exam = {
-  japanese: 50,
-  math: 60,
-  science: 100
-};
-//成績を出力する
-const judgement = () => {
-  //点数を合計する
-  const sums = (japanese, math, science) => {
-    return japanese + math + science;
-  };
-  const sum = sums(exam.japanese, exam.math, exam.science);
-  //成績判定をする
-  const grades = () => {
-    if (sum >= 250 && sum <= 300) {
-      return "A";
-    } else if (sum >= 200 && sum <= 249) {
-      return "B";
-    } else if (sum >= 100 && sum <= 199) {
-      return "C";
-    } else {
-      return "D";
-    }
+const get_achievement = (x, y, z) => {
+  const sum = x + y + z;
+  if (sum >= 250 && sum <= 300) {
+    return "A";
+  } else if (sum >= 200 && sum <= 249) {
+    return "B";
+  } else if (sum >= 100 && sum <= 199) {
+    return "C";
+  } else {
+    return "D";
   }
-  const grade = grades();
-  //合否判定をする
-  const judge = exam.japanese < 60 || exam.math < 60 || exam.science < 60 ? "不合格" : "合格";
-  //成績を出力する
-  console.log(`あなたの成績は${grade}です。${judge}です！`);
 }
-judgement();
+//console.log(get_achievement(60, 100, 40));
+const achievement = get_achievement(60, 100, 40);
+
+const get_pass_or_failure = (x,y,z) => {
+  return x < 60 || y < 60 || z < 60 ? "不合格" : "合格";
+}
+//console.log(get_pass_or_failure(60, 100, 40));
+const pass_or_failure = get_pass_or_failure(60, 100, 40);
+
+const judgement = () => {
+  return achievement === "A" &&  pass_or_failure === "合格" ? "最高です！" : `あなたの成績は${achievement}です。${pass_or_failure}です!`;
+}
+console.log(judgement());
 //# sourceMappingURL=maps/judgement.js.map
