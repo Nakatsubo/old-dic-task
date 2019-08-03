@@ -1,0 +1,21 @@
+① $(document).ready(function(){ ~ });
+HTMLドキュメントの解釈が終わったら処理を実行する。
+
+
+② $('#btn-evaluation').click(function() { ~ });
+ノード名「#btn-evaluation」がクリックされたら処理を実行する。
+
+③ $('#national_language, #english, #mathematics, #science, #society').change(function() { ~ });
+ノード名「#national_language, #english, #mathematics, #science, #society」のそれぞれの値が変更されたら処理を実行する。
+
+④ $('#national_language').val()
+ノード名「#national_language」の値を取得する。
+
+⑤ Number()
+値を数値型に変更する。
+
+⑥ $("#sum_indicate").text(sum);
+ノード名「"#sum_indicate"」のテキストを、変数名「sum」のテキストに更新する。
+
+⑦ .append
+指定したノードの末尾に要素を追加する。
