@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
       average = sum / subject_points.length;
       average_indicate.textContent = average;
 
-      const get_achievement = () => {
+      const get_achievement = (average) => {
         const btnEvaluation = document.getElementById('btn-evaluation');
         const evaluation = document.getElementById('evaluation');
         let achievement = "";
@@ -53,9 +53,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }, false)
         return achievement;
       }
-      const achievement = get_achievement();
+      const achievement = get_achievement(average);
 
-      const get_pass_or_failure = () => {
+      const get_pass_or_failure = (subject_points) => {
         const btnJudge = document.getElementById('btn-judge');
         const judge = document.getElementById('judge');
         let pass_or_failure = "合格";
@@ -70,9 +70,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }, false)
         return pass_or_failure;
       }
-      const pass_or_failure = get_pass_or_failure();
+      const pass_or_failure = get_pass_or_failure(subject_points);
 
-      const judgement = () => {
+      const judgement = (achievement, pass_or_failure) => {
         const btnDeclaration = document.getElementById('btn-declaration');
         const declaration = document.getElementById('declaration');
         let result = `あなたの成績は${achievement}です。${pass_or_failure}です`
@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }, false)
         return result;
       }
-      judgement();
+      judgement(achievement, pass_or_failure);
     }
   }
   judgementFunc();
