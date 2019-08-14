@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>DIVE INTO SAMPLE JavaScript</title>
+    <link href="sample.css" rel="stylesheet" />
+    <script src="sample.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="inner">
+        <div class="sec" id="datas">
+          <p>
+            名前：テスト太郎
+          </p>
+          <div id="wrapper">
+            <p>
+              国語：<input type="number" id="national_language" value=0>
+            </p>
+            <p>
+              英語：<input type="number" id="english" value=0>
+            </p>
+            <p>
+              数学：<input type="number" id="mathematics" value=0>
+            </p>
+            <p>
+              理科：<input type="number" id="science" value=0>
+            </p>
+            <p>
+              社会：<input type="number" id="society" value=0>
+            </p>
+          </div>
+        </div>
+        <div class="sec" id="sums">
+          <p>
+            合計点：<label id="sum_indicate"></label>
+          </p>
+        </div>
+        <div class="sec" id="averages">
+          <p>
+            平均点：<label id="average_indicate"></label>
+          </p>
+        </div>
+        <div class="sec" id="results">
+          <p>
+            <label class="btn btn-primary" id="btn-evaluation">ランク</label> ： <label id="evaluation"></label>
+          </p>
+          <p>
+            <label class="btn btn-success" id="btn-judge">判定</label> ： <label id="judge"></label>
+          </p>
+          <p>
+            <label class="btn btn-warning" id="btn-declaration">最終ジャッジ</label> ： <label id="declaration" class="result"></label>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
