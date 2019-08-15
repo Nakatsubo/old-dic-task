@@ -1,0 +1,5 @@
+① player = Player.newの記述の意味
+クラスPlayerを変数playerに代入して、インスタンスを生成することを表している。
+
+② 大文字のPlayerと小文字のplayerの違い
+大文字のPlayerはクラスを定義しており、小文字のplayerは変数を宣言している点で異なる。
