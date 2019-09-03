@@ -1,0 +1,109 @@
+html, body, div, p, input, label {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  background: #fff;
+}
+
+p {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+#container {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner {
+  width: 96rem;
+  height: auto;
+  padding: 4rem;
+}
+
+.sec {
+  margin-bottom: 4rem;
+}
+
+.sec:last-of-type {
+  margin-bottom: 0;
+}
+
+#datas #wrapper p:last-of-type {
+  margin-bottom: 0;
+}
+
+#sums p label, #averages p label {
+  font-weight: 600;
+}
+
+#results p {
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+}
+
+#results p:last-of-type {
+  padding-bottom: 0;
+}
+
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .8rem 1.6rem;
+  border-radius: .4rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-primary {
+  background: #337ab7;
+}
+
+.btn-success {
+  background: #5cb85c;
+}
+
+.btn-warning {
+  background: #f0ad4e;
+}
+
+.result {
+  padding: 1.2rem 2.4rem;
+  border: 1px solid #c1e6ed;
+  border-radius: .4rem;
+  background: #daecf6;
+  font-weight: 600;
+  color: #2f6f8e;
+}
+
+#declaration {
+  display: none;
+}
+
+/*# sourceMappingURL=maps/sample.css.map */
