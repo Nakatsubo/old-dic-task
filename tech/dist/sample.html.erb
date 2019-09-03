@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>DIVE INTO SAMPLE Web technology</title>
+  </head>
+  <body>
+    <div id="container">
+      <section class="sec">
+        <div class="inner">
+
+          <h1>
+            テスト！！！！！！！！！！！！！
+          </h1>
+
+          <% require 'pg' %>
+          <% connection = PG::connect(dbname: 'goya') %>
+          <% connection.internal_encoding = "utf-8" %>
+
+          <p>
+            譲渡先が自家消費ではないもののgoyaの情報
+          </p>
+          <% results_01 = connection.exec("select * from crops where not give_for like '自家消費';") %>
+          <% data_01 = [] %>
+          <% results_01.each do |result| %>
+            <%  data_01 << "長さ：#{result["length"]} 重量：#{result["weight"]} 品質：#{result["quality"]} 譲渡先：#{result["give_for"]} 日付：#{result["date"]}" %>
+          <% end %>
+
+          <form action="goya.cgi" method="post">
+            <input name="goya" type="text" value="<%= data_01.join(" ") %>" />
+            <input name="送信" type="submit" />
+          </form>
+
+          <p>
+            品質が悪いもの（false）のgoyaの情報
+          </p>
+          <% results_02 = connection.exec("select * from crops where quality = false;") %>
+          <% data_02 = [] %>
+          <% results_02.each do |result| %>
+            <%  data_02 << "長さ：#{result["length"]} 重量：#{result["weight"]} 品質：#{result["quality"]} 譲渡先：#{result["give_for"]} 日付：#{result["date"]}" %>
+          <% end %>
+
+          <form action="goya.cgi" method="post">
+            <input name="goya" type="text" value="<%= data_02.join(" ") %>" />
+            <input name="送信" type="submit" />
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

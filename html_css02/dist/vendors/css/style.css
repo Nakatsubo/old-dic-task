@@ -1,0 +1,215 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#container {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner {
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 2.0rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+a {
+  font-size: 1.4rem;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  background: #333;
+  position: fixed;
+}
+
+.header a {
+  color: #fff;
+  padding: 1.5rem;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.header .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header .inner .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header .inner .info h1 {
+  margin-right: 2rem;
+}
+
+.header .inner .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header .inner .nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header .inner .nav ul li:first-of-type {
+  margin-right: 2rem;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background: #2c3d4f;
+  position: absolute;
+  bottom: 0;
+}
+
+footer .inner {
+  padding: 3rem;
+}
+
+footer .inner p {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+footer .inner p:first-child {
+  margin-bottom: 1.5rem;
+}
+
+.main {
+  padding-bottom: 107px;
+}
+
+.main-header {
+  width: 100%;
+  height: auto;
+  padding: 20rem;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-header p {
+  text-align: center;
+}
+
+.main-header p img {
+  width: auto;
+  height: 8rem;
+}
+
+.sec .inner {
+  padding: 3rem;
+  text-align: center;
+}
+
+.sec .inner h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.sec .inner > p {
+  margin-bottom: 1.5rem;
+  line-height: 2.0;
+}
+
+.function {
+  background: #d3d3d3;
+}
+
+.function .inner #function-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 3rem 12rem;
+  margin-bottom: 3rem;
+}
+
+.function .inner #function-images #function-image img {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+  height: 10rem;
+}
+
+.function .inner #function-images #function-image p {
+  margin-top: 1.5rem;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

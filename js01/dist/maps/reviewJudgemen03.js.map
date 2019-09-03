@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["reviewJudgemen03.js"],"sourcesContent":["let points = [60,100,80,80,70,80];\nlet number = points.length;\n\nconst get_achievement = () => {\n  let sum = 0;\n  for (let i = 0; i < number; i++) {\n    sum += points[i];\n  }\n  console.log(sum);\n}\nget_achievement();"],"file":"../reviewJudgemen03.js"}
