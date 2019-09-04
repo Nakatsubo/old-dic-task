@@ -12,21 +12,21 @@ class Janken
         index.each do |content|
           puts content
         end
-        playerHand = gets.chomp.to_i
-        if playerHand == 0 || playerHand == 1 || playerHand == 2
-          return playerHand
+        playerHand = gets.chomp
+        if playerHand =~ /^[0-2]+$/
+          return playerHand.to_i
         else
           puts "0〜2の数字を入力してください。"
         end
       end
     end
-    playerHand = playerFunc
+    p playerHand = playerFunc
 
     def enemyFunc
       enemyHand = rand(0..2)
       return enemyHand
     end
-    enemyHand = enemyFunc
+    p enemyHand = enemyFunc
 
     hands = [
       "グー",
